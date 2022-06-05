@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(72,156,193);
+}
+button{
+    cursor: pointer;
+}
+.container{
+    max-width: 750px;
+    padding:10px;
+    margin: 30px auto 0 auto;
+}
+.todolist__title{
+    text-align: center;
+    color:#6f6f6f;
+    font-size: 36px;
+}
+.todolist__wrapper{
+    height: auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.todolist__add{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.todolist__input{
+    width: 75%;
+    height: 40px;
+    font-size: 24px;
+    border: 1px solid rgb(191,186,143);
+}
+.todolist__input::placeholder{
+    text-align: center;
+}
+.todolist__add-btn{
+    margin-left: 10px;
+    font-size: 24px;
+    color:#fff;
+    width: 50px;
+    background-color: rgb(88,163,199);
+    border: none;
+}
+.task__item{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 8%;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.task__title{
+    font-size: 24px;
+    color:#00BFFF;
+}
+.task__delete{
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    color:red;
+}
+.checked{
+    opacity: 0.3;
+}
+.checked span{
+    text-decoration: line-through;
+}
+.delete-anim{
+    animation: delete 1s ease-in-out;
+}
+@keyframes delete{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.task__completed{
+    transform:scale(1.6);
+    cursor:pointer;
+}
